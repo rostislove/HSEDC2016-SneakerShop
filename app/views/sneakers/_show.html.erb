@@ -1,0 +1,25 @@
+<div>
+  <%= image_tag sneaker.sneakerimage %>
+</div>
+
+<h2><%= link_to sneaker.name, sneaker %></h2>
+
+
+<p>
+  <strong>Price:</strong>
+  <%= sneaker.price %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= sneaker.size %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= sneaker.sex %>
+</p>
+
+<%= link_to 'Destroy', sneaker, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<hr>
